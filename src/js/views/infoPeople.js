@@ -21,7 +21,7 @@ export const InfoPeople = props => {
 					</Card>
 				</Col>
 				<Col>
-					
+					<Card >
 						<Card.Body>
 							<Card.Title>{e.name}</Card.Title>
 							<Card.Text>Height: {e.height}</Card.Text>
