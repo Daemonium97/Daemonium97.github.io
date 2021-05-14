@@ -47,7 +47,7 @@ const Layout = () => {
 						<InfoPlanets data={store.planets} />
 					</Route>
 				</Switch>
-				<Footer />
+				<Footer/>
 			</BrowserRouter>
 		</div>
 	);

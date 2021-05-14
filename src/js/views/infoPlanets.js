@@ -24,7 +24,7 @@ export const InfoPlanets = props => {
 				</Col>
 
 				<Col>
-					<Card style={{ width: "18rem" }}>
+					<Card >
 						<CardBody>
 							<Card.Title>{e.name}</Card.Title>
 							<Card.Text>Rotation Period: {e.rotation_period}</Card.Text>
