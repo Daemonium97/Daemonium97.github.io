@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 
-import { Container, Row, Col, Button, ButtonToolbar } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 import { CardBody } from "reactstrap";
@@ -24,25 +24,25 @@ export const InfoPlanets = props => {
 				</Col>
 
 				<Col>
-					<Card style={{ width: "18rem" }}>
-						<CardBody>
-							<Card.Title>{e.name}</Card.Title>
-							<Card.Text>Rotation Period: {e.rotation_period}</Card.Text>
-							<Card.Text>Orbital Period: {e.orbital_period}</Card.Text>
-							<Card.Text>
-								Diameter:
+
+					<CardBody>
+						<Card.Title>{e.name}</Card.Title>
+						<Card.Text>Rotation Period: {e.rotation_period}</Card.Text>
+						<Card.Text>Orbital Period: {e.orbital_period}</Card.Text>
+						<Card.Text>
+							Diameter:
 								{e.diameter}
-							</Card.Text>
-							<Card.Text>Climate: {e.climate}</Card.Text>
-						</CardBody>
+						</Card.Text>
+						<Card.Text>Climate: {e.climate}</Card.Text>
+					</CardBody>
 					</Card>
-					<Link to="/planets/go">
-						<Button id="infoPlanetButton" variant="primary">
-							Go back to Planets
+				<Link to="/planets/go">
+					<Button id="infoPlanetButton" variant="primary">
+						Go back to Planets
 						</Button>
-					</Link>
+				</Link>
 				</Col>
 			</Row>
-		</Container>
+		</Container >
 	);
 };
