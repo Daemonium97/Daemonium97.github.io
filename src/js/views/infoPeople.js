@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import { Container, Row, Col, Button, ButtonToolbar } from "react-bootstrap";
+import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
@@ -13,15 +13,19 @@ export const InfoPeople = props => {
 		<Container fluid>
 			<Row className="justify-content-md-center">
 				<Col>
-					<Card>
-						<Card.Img
-							variant="top"
-							src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/star-wars-characters-ranked-1577122930.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*"
-						/>
-					</Card>
+					<Image
+						className="w-100 h-100"
+						variant="top"
+						style={{
+							width: "100px",
+							height: "100px",
+							boxShadow: "8px 6px 15px #9e9e9e"
+						}}
+						src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/star-wars-characters-ranked-1577122930.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*"
+					/>
 				</Col>
 				<Col>
-					<Card >
+					<Card>
 						<Card.Body>
 							<Card.Title>{e.name}</Card.Title>
 							<Card.Text>Height: {e.height}</Card.Text>

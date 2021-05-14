@@ -27,9 +27,9 @@ const Layout = () => {
 		<div className="d-flex flex-column">
 			<BrowserRouter basename={basename}>
 				<MyNavbar />
+				<Music />
 				<Switch>
 					<Route exact path="/">
-						<Music />
 						<Carrusel />
 					</Route>
 
@@ -47,7 +47,7 @@ const Layout = () => {
 						<InfoPlanets data={store.planets} />
 					</Route>
 				</Switch>
-				<Footer/>
+				<Footer />
 			</BrowserRouter>
 		</div>
 	);

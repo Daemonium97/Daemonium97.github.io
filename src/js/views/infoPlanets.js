@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 
-import { Container, Row, Col, Button, ButtonToolbar } from "react-bootstrap";
+import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 import { CardBody } from "reactstrap";
@@ -15,16 +15,20 @@ export const InfoPlanets = props => {
 		<Container fluid>
 			<Row className="justify-content-md-center">
 				<Col>
-					<Card>
-						<Card.Img
-							variant="top"
-							src="https://sm.ign.com/t/ign_za/gallery/e/every-plan/every-planet-and-location-in-star-wars-battlefront-2s-multip_uxzr.1080.jpg"
-						/>
-					</Card>
+					<Image
+						className=" w-100 h-100"
+						variant="top"
+						style={{
+							width: "100px",
+							height: "100px",
+							boxShadow: "8px 6px 15px #9e9e9e"
+						}}
+						src="https://sm.ign.com/t/ign_za/gallery/e/every-plan/every-planet-and-location-in-star-wars-battlefront-2s-multip_uxzr.1080.jpg"
+					/>
 				</Col>
 
 				<Col>
-					<Card >
+					<Card>
 						<CardBody>
 							<Card.Title>{e.name}</Card.Title>
 							<Card.Text>Rotation Period: {e.rotation_period}</Card.Text>
